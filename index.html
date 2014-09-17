@@ -16,7 +16,8 @@
 
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
-
+		<link rel="stylesheet" href="plugin/title-footer/title-footer.css">
+		<link rel="stylesheet" href="css/style.min.css">
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -42,21 +43,22 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+				<section data-state="no-title-footer" data-background="images/graticule.png">
 					<h1>Syntool Arctic</h1>
-					<h3>as a tool to perform sea surface monitoring in the Arctic region</h3>
-					<small>
+					<h3>as a tool to perform sea surface monitoring <br />in the Arctic region</h3>
 						<p>
 							<strong>Speaker</strong><br />
 							<a href="http://twitter.com/bolkhovsky">Ilya Bolkhovsky</a>
 						</p>
 						<p>
 							<strong>Contributors</strong><br />
-							Vyacheslav Shebanov, <br />
+							<a href="https://twitter.com/thought_sync">Vyacheslav Shebanov,</a><br />
 							Bertrand Chapron, <br />
 							Vladimir Kudryavtsev<br />
 						</p>
-					</small>
+					<div class="main-copy">
+						<small><a href="http://solab.rshu.ru">Satellite Oceanography Laboratory</a> <br />2014</small>
+					</div>
 				</section>
 
 			</div>
@@ -90,7 +92,14 @@
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } },
+					{
+						src: 'plugin/title-footer/title-footer.js',
+						async: true,
+						callback: function () {
+							title_footer.initialize('&copy; SOLab, 2014');
+						}
+					}
 				]
 			});
 
