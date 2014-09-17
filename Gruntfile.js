@@ -99,7 +99,7 @@ module.exports = function(grunt) {
 
 		watch: {
 			main: {
-				files: [ 'Gruntfile.js', 'js/reveal.js', 'css/reveal.css', 'css/style.css', 'index.html' ],
+				files: [ 'Gruntfile.js', 'js/reveal.js', 'css/reveal.css', 'css/style.css' ],
 				tasks: 'default'
 			},
 			theme: {

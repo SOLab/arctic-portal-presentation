@@ -42,26 +42,75 @@
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section data-state="no-title-footer" data-background="images/graticule.png">
-					<h1>Syntool Arctic</h1>
-					<h3>as a tool to perform sea surface monitoring <br />in the Arctic region</h3>
-						<p>
-							<strong>Speaker</strong><br />
-							<a href="http://twitter.com/bolkhovsky">Ilya Bolkhovsky</a>
-						</p>
-						<p>
-							<strong>Contributors</strong><br />
-							<a href="https://twitter.com/thought_sync">Vyacheslav Shebanov,</a><br />
-							Bertrand Chapron, <br />
-							Vladimir Kudryavtsev<br />
-						</p>
-					<div class="main-copy">
-						<small><a href="http://solab.rshu.ru">Satellite Oceanography Laboratory</a> <br />2014</small>
-					</div>
-				</section>
+		    <div class="slides">
+		        <section data-state="no-title-footer" data-background="images/graticule.png">
+		            <h1>Syntool Arctic</h1>
+		            <h3>as a tool to perform sea surface monitoring <br />in the Arctic region</h3>
+		            <p>
+		                <strong>Speaker</strong><br />
+		                <a href="http://twitter.com/bolkhovsky">Ilya Bolkhovsky</a>
+		            </p>
+		            <p>
+		                <strong>Contributors</strong><br />
+		                <a href="https://twitter.com/thought_sync">Vyacheslav Shebanov,</a><br />
+		                Bertrand Chapron, <br />
+		                Vladimir Kudryavtsev<br />
+		            </p>
+		            <div class="main-copy">
+		                <small><a href="http://solab.rshu.ru">Satellite Oceanography Laboratory</a> <br />2014</small>
+		            </div>
+		        </section>
+                
+                <section data-state="no-title-footer">
+                    <section>
+                        <h2>Variery of:</h2>
+                        <table style="width: 100%">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h3>Products</h3>
+                                        <ul>
+                                            <li>Scatterometer</li>
+                                            <li>SAR</li>
+                                            <li>Radiometry</li>
+                                            <li>Altimetry</li>
+                                            <li>Optical</li>
+                                            <li>Model</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <h3>Formats</h3>
+                                        <ul>
+                                            <li>Binary</li>
+                                            <li>ASCII</li>
+                                            <li>NetCDF</li>
+                                            <li>HDF</li>
+                                            <li>GRIB</li>
+                                            <li>...</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <h3>Other</h3>
+                                        <ul>
+                                            <li>Spatial resolution</li>
+                                            <li>Spatial coverage</li>
+                                            <li>Temporal coverage</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
 
-			</div>
+                    <section>
+                        <h3>Our ocean remote sensing data catalog</h3>
+                        <p>Over 30 pre-selected products of se&nbsp;surface&nbsp;temperature, sea&nbsp;ice&nbsp;concentration, scatterometer&nbsp;wind, altimetry and other.</p>
+                        <p>Long time series including today's measurements.</p>
+                        <img src="images/satin-products.jpg" alt="satin catalog" />
+                    </section>
+                </section>
+
+		    </div>
 
 		</div>
 
@@ -97,7 +146,7 @@
 						src: 'plugin/title-footer/title-footer.js',
 						async: true,
 						callback: function () {
-							title_footer.initialize('&copy; SOLab, 2014');
+						    title_footer.initialize('Syntool Arctic Portal: http://arctic.solab.rshu.ru — © SOLab, 2014');
 						}
 					}
 				]
