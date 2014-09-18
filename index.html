@@ -62,75 +62,154 @@
 		        </section>
                 
 		        <section data-state="no-title-footer">
-		            <section>
-		                <h2>Variery of:</h2>
-		                <table style="width: 100%">
-		                    <tbody>
-		                        <tr>
-		                            <td>
-		                                <h3>Products</h3>
-		                                <ul>
-		                                    <li>Scatterometer</li>
-		                                    <li>SAR</li>
-		                                    <li>Radiometry</li>
-		                                    <li>Altimetry</li>
-		                                    <li>Optical</li>
-		                                    <li>Model</li>
-		                                </ul>
-		                            </td>
-		                            <td>
-		                                <h3>Formats</h3>
-		                                <ul>
-		                                    <li>Binary</li>
-		                                    <li>ASCII</li>
-		                                    <li>NetCDF</li>
-		                                    <li>HDF</li>
-		                                    <li>GRIB</li>
-		                                    <li>...</li>
-		                                </ul>
-		                            </td>
-		                            <td>
-		                                <h3>Other</h3>
-		                                <ul>
-		                                    <li>Spatial resolution</li>
-		                                    <li>Spatial coverage</li>
-		                                    <li>Temporal coverage</li>
-		                                </ul>
-		                            </td>
-		                        </tr>
-		                    </tbody>
-		                </table>
+		            <section data-state="no-title-footer">
+		                <h2>Environmental monitoring<br />software</h2>
+		                <a href="https://twitter.com/NWSOPC/status/509925652120997888/photo/1"><img height="500" src="images/eumetsat_storm_atlantic.png" alt="" title="Full image of ASCAT wind retrievals from roughly 23Z 09/10/14 showing storm force low in the eastern Atlantic." /></a>
 		            </section>
 
+                    <section data-state="no-title-footer">
+                        <h2>Main challenge is</h2>
+                        <h3>the variery of</h3>
+                        <table style="width: 100%">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h3>Products</h3>
+                                        <ul>
+                                            <li>Scatterometer</li>
+                                            <li>SAR</li>
+                                            <li>Radiometry</li>
+                                            <li>Altimetry</li>
+                                            <li>Optical</li>
+                                            <li>Model</li>
+                                        </ul>
+                                    </td>
+                                    <td class="fragment">
+                                        <h3>Formats</h3>
+                                        <ul>
+                                            <li>Binary</li>
+                                            <li>ASCII</li>
+                                            <li>NetCDF</li>
+                                            <li>HDF</li>
+                                            <li>GRIB</li>
+                                            <li>...</li>
+                                        </ul>
+                                    </td>
+                                    <td class="fragment">
+                                        <h3>and also</h3>
+                                        <ul>
+                                            <li>Spatial resolutions</li>
+                                            <li>Spatial coverages</li>
+                                            <li>Temporal coverages</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    
 		            <section>
+		                <h3>What do we need to build<br />an environmental monitoring<br />software?</h3>
+		                <div class="fragment">
+		                    <h2>A single entry point</h2>
+		                    <h3>to search and access data</h3>
+                            <h3>At first.</h3>
+		                </div>
+		            </section>
+
+		            <section data-state="no-title-footer">
+                        <h2>Satin</h2>
 		                <h3>Our ocean remote sensing data catalog</h3>
 		                <p>Over 30 pre-selected products of se&nbsp;surface&nbsp;temperature, sea&nbsp;ice&nbsp;concentration, scatterometer&nbsp;wind, altimetry and other.</p>
-		                <p>Long time series including today's measurements.</p>
+		                <p><a href="http://satin.rshu.ru">http://satin.rshu.ru</a></p>
 		                <img src="images/satin-products.jpg" alt="satin catalog" />
 		            </section>
                     
-		            <section>
-		                <h3 class="fragment visible current-fragment">Alright, <br/>We have data.</h3>
+                    <section data-state="no-title-footer">
+                        <h3>The catalog provides</h3>
+                        <ul>
+                            <li>Clear UI for beginners</li>
+                            <li>Long time series of measurements<br />including today's measurements</li>
+                            <li>RESTful API for data search</li>
+                            <li>Standardized data access via OPeNDAP servers</li>
+                        </ul>
+                    </section>
+
+		            <section data-state="no-title-footer">
+		                <h3>Alright, <br />We have data.</h3>
 		                <h3 class="fragment">Actually <br />A lot of data...</h3>
-		                <h3 class="fragment">With different<br />resolution and coverage.</h3>
-		                <h3 class="fragment">So how to show them together?</h3>
+		                <h3 class="fragment">But with different<br />resolution and coverage.</h3>
+		                <h3 class="fragment">How to show them together?</h3>
 		            </section>
                     
+                    <section data-state="no-title-footer">
+                        <h2>Put all data on a map</h2>
+                        <div class="fragment">
+                            <h3>Yet it is not so simple:</h3>
+                            <ol>
+                                <li>Retrieve requested timespan</li>
+                                <li>Apply masks and parameters correction</li>
+                                <li>Reproject</li>
+                                <li>Choose palette and visualization strategy</li>
+                                <li>Create tiles</li>
+                                <!--<img width="400" src="images/training-tiling.png" alt="" />-->
+                            </ol>
+                        </div>
+                        <div class="fragment">And it is even more complex for vectorial data (wind or pressure)</div>
+                    </section>
+                    
 		        </section>
-                
+
 		        <section>
 		            <section>
 		                <h2>Syntool Arctic Portal</h2>
-                        <img src="images/syntool-main.jpg" alt="" />
+		                <img src="images/syntool-main.jpg" alt="" />
+		                <a href="http://arctic.solab.rshu.ru/">http://arctic.solab.rshu.ru</a>
 		            </section>
 		            <section>
-		                <h3>Combine diferent data</h3>
-		                <img src="images/syntool-animation-1.gif" alt="syntool animation 1" />
+                        <h3>Combine different products</h3>
+                        <img src="images/syntool-products.jpg" alt="Syntool Products" />
+		            </section>
+		            <section>
+		                <h3>Combine different products</h3>
+                        <img src="images/syntool-animation-1.gif" alt="Syntool animation 1" title="TrueColor, Sea Surface Temperature (both MODIS) and Scatterometer wind (ASCAT)" />
+                        <h4>TrueColor, Sea Surface Temperature (both MODIS)<br />and Scatterometer wind (ASCAT)</h4>
 		            </section>
 		            <section>
 		                <h3>Change layers transparency</h3>
-		                <img src="images/syntool-animation-2.gif" alt="syntool animation 2" />
+		                <img src="images/syntool-layers.jpg" alt="Syntool Layers" />
 		            </section>
+                    <section>
+                        <h3>Change layers transparency</h3>
+                        <img src="images/syntool-animation-2.gif" alt="Syntool animation 2" title="Phytoplankton bloom and Sea Surface Temperature (MODIS)" />
+                        <h4>Phytoplankton bloom and Sea Surface Temperature (MODIS)</h4>
+                    </section>
+		            <section>
+		                <h3>Dynamic visualizations</h3>
+                        <img src="images/syntool-animation-3.gif" alt="Syntool animation 3" title="Sea Ice Concentration (AMSRE) and Current Geostrophic Velocities (AVISO)" />
+		                <img src="images/syntool-timeline.jpg" alt="Syntool Timeline" />
+		                <h4>Sea Ice Concentration (AMSRE)<br />and Current Geostrophic Velocities (AVISO)</h4>
+		            </section>
+		            <section>
+		                <h3>Vectorial data</h3>
+		                <img src="images/wind-1.png" alt="Model Wind" />
+                        <h4>Model wind (NCEP GFS)</h4>
+		            </section>
+		            <section>
+		                <h3>Vectorial data</h3>
+		                <img src="images/wind-2.png" alt="Model Wind" />
+                        <h4>Model wind (NCEP GFS)<br />and Scatterometer wind (ASCAT)</h4>
+		            </section>
+                    <section>
+                        <h3>Vectorial data</h3>
+                        <img src="images/syntool_d-polar-low.jpg" alt="Model Wind" />
+                        <h4>MODIS image and Polar low location</h4>
+                    </section>
+                    <section>
+                        <h3>Vectorial data</h3>
+                        <img src="images/syntool-polar-low.jpg" alt="Model Wind" />
+                        <h4>MODIS image and Polar low location</h4>
+                    </section>
 		        </section>
 		    </div>
 
@@ -144,17 +223,20 @@
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
 				center: true,
-
+				keyboard: {
+				    39: 'next',
+				    37: 'prev'
+				},
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+				// parallaxBackgroundImage: 'images/graticule.png',
+			    // parallaxBackgroundSize: '820px 820px',
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
