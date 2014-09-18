@@ -17,9 +17,10 @@
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 		<link rel="stylesheet" href="plugin/title-footer/title-footer.css">
-		<link rel="stylesheet" href="css/style.min.css">
+	    <link rel="stylesheet" href="css/style.min.css">
+
 		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -48,11 +49,11 @@
 		            <h3>as a tool to perform sea surface monitoring <br />in the Arctic region</h3>
 		            <p>
 		                <strong>Speaker</strong><br />
-		                <a href="http://twitter.com/bolkhovsky">Ilya Bolkhovsky</a>
+		                Ilya Bolkhovsky
 		            </p>
 		            <p>
 		                <strong>Contributors</strong><br />
-		                <a href="https://twitter.com/thought_sync">Vyacheslav Shebanov,</a><br />
+		                Vyacheslav Shebanov,<br />
 		                Bertrand Chapron, <br />
 		                Vladimir Kudryavtsev<br />
 		            </p>
@@ -109,14 +110,14 @@
                         </table>
                     </section>
                     
-		            <section>
-		                <h3>What do we need to build<br />an environmental monitoring<br />software?</h3>
-		                <div class="fragment">
-		                    <h2>A single entry point</h2>
-		                    <h3>to search and access data</h3>
-                            <h3>At first.</h3>
-		                </div>
-		            </section>
+                    <section data-state="no-title-footer">
+                        <h3>What do we need to build<br />an environmental monitoring<br />software?</h3>
+                        <div class="fragment">
+                            <h2>A single entry point</h2>
+                            <h3>to search and access data</h3>
+                            <h3>(at first).</h3>
+                        </div>
+                    </section>
 
 		            <section data-state="no-title-footer">
                         <h2>Satin</h2>
@@ -143,82 +144,99 @@
 		                <h3 class="fragment">How to show them together?</h3>
 		            </section>
                     
-                    <section data-state="no-title-footer">
-                        <h2>Put all data on a map</h2>
-                        <div class="fragment">
-                            <h3>Yet it is not so simple:</h3>
-                            <ol>
-                                <li>Retrieve requested timespan</li>
-                                <li>Apply masks and parameters correction</li>
-                                <li>Reproject</li>
-                                <li>Choose palette and visualization strategy</li>
-                                <li>Create tiles</li>
-                                <!--<img width="400" src="images/training-tiling.png" alt="" />-->
-                            </ol>
-                        </div>
-                        <div class="fragment">And it is even more complex for vectorial data (wind or pressure)</div>
-                    </section>
-                    
+		            <section data-state="no-title-footer">
+		                <h2>Put all data on a map</h2>
+		                <div class="fragment">
+		                    <h3>Yet it is not so simple:</h3>
+		                    <ol>
+		                        <li>Retrieve requested timespan of data</li>
+		                        <li>Apply masks and perform parameters correction</li>
+		                        <li>Reproject data</li>
+		                        <li>Choose palette and visualization strategy</li>
+		                        <li>Create tiles</li>
+		                    </ol>
+		                </div>
+		            </section>
+		            <!--<section data-state="no-title-footer">
+		                    <h2>Vectorial data</h2>
+                            <p>To be added...</p>
+		            </section>-->
 		        </section>
 
 		        <section>
 		            <section>
 		                <h2>Syntool Arctic Portal</h2>
-		                <img src="images/syntool-main.jpg" alt="" />
+		                <img class="stretch" src="images/syntool-main.jpg" alt="" />
 		                <a href="http://arctic.solab.rshu.ru/">http://arctic.solab.rshu.ru</a>
 		            </section>
 		            <section>
-                        <h3>Combine different products</h3>
+		                <h3>Combine different products</h3>
 		                <img src="images/syntool-products.jpg" alt="Syntool Products" />
-                        <p><small>Catalog of products: multiple items can be selected.</small></p>
+		                <p><small>Catalog of products: multiple items can be selected</small></p>
 		            </section>
-                    <section>
-                        <h3>Combine different products</h3>
-                        <img src="images/syntool-animation-1.gif" alt="Syntool animation 1" title="TrueColor, Sea Surface Temperature (both MODIS) and Scatterometer wind (ASCAT)" />
-                        <p><small>TrueColor, Sea Surface Temperature (both MODIS)<br />and Scatterometer wind (ASCAT)</small></p>
-                    </section>
-                    <section>
-                        <h3>Change layers transparency</h3>
-                        <img src="images/syntool-layers.jpg" alt="Syntool Layers" />
-                        <p><small>This dialog allows to change layers order and transparency</small></p>
-                    </section>
+		            <section>
+		                <h3>Combine different products</h3>
+		                <img src="images/syntool-animation-1.gif" alt="Syntool animation 1" title="TrueColor, Sea Surface Temperature (both MODIS) and Scatterometer wind (ASCAT)" />
+		                <p><small>TrueColor, Sea Surface Temperature (both MODIS)<br />and Scatterometer wind (ASCAT)</small></p>
+		            </section>
+		            <section>
+		                <h3>Change layers transparency</h3>
+		                <img src="images/syntool-layers.jpg" alt="Syntool Layers" />
+		                <p><small>This dialog allows to change layers order and transparency</small></p>
+		            </section>
 		            <section>
 		                <h3>Change layers transparency</h3>
 		                <img src="images/syntool-animation-2.gif" alt="Syntool animation 2" title="Phytoplankton bloom and Sea Surface Temperature (MODIS)" />
 		                <p><small>Phytoplankton bloom and Sea Surface Temperature (MODIS)</small></p>
 		            </section>
 		            <section>
-                        <h3>Timeline</h3>
-		                <img src="images/syntool-timeline.jpg" alt="Syntool Timeline" />
+		                <h3>Timeline</h3>
+                        <img class="stretch" src="images/syntool-timeline.jpg" alt="Syntool Timeline" />
+		                <p>Navigate back and forward through the archive.</p>
+		                <p>Playback button for dynamic visualization.</p>
 		            </section>
-                    <section>
-                        <h3>Dynamic visualizations</h3>
-                        <img src="images/syntool-animation-3.gif" alt="Syntool animation 3" title="Sea Ice Concentration (AMSRE) and Current Geostrophic Velocities (AVISO)" />
-                        <p><small>Sea Ice Concentration (AMSRE)<br />and Current Geostrophic Velocities (AVISO)</small></p>
-                    </section>
-                    <section>
-                        <h3>Vectorial data</h3>
-                        <img height="500" src="images/wind-1.png" alt="Model Wind" />
-                        <p><small>Model wind (NCEP GFS)</small></p>
-                    </section>
-                    <section>
-                        <h3>Vectorial data</h3>
-                        <img height="500" src="images/wind-2.png" alt="Model Wind" />
-                        <p><small>Model wind (NCEP GFS)<br />and Scatterometer wind (ASCAT)</small></p>
-                    </section>
-                    <section>
-                        <h3>Vectorial data</h3>
-                        <img height="500" src="images/syntool_d-polar-low.jpg" alt="Model Wind" />
-                        <p><small>MODIS image and Polar low location</small></p>
-                    </section>
-                    <section>
-                        <h3>Vectorial data</h3>
-                        <img height="500" src="images/syntool-polar-low.jpg" alt="Model Wind" />
-                        <p><small>MODIS image and Polar low location</small></p>
-                    </section>
+		            <section>
+		                <h3>Dynamic visualization</h3>
+		                <img src="images/syntool-animation-3.gif" alt="Syntool animation 3" title="Sea Ice Concentration (AMSRE) and Current Geostrophic Velocities (AVISO)" />
+		                <p><small>Sea Ice Concentration (AMSRE)<br />and Current Geostrophic Velocities (AVISO)</small></p>
+		            </section>
+		            <section>
+		                <h3>Vectorial data</h3>
+                        <img height="500" class="stretch" src="images/wind-1.png" alt="Model Wind" />
+		                <p><small>Model wind (NCEP GFS)</small></p>
+		            </section>
+		            <section>
+		                <h3>Vectorial data</h3>
+		                <img height="500" src="images/wind-2.png" alt="Model Wind" />
+		                <p><small>Model wind (NCEP GFS)<br />and Scatterometer wind (ASCAT)</small></p>
+		            </section>
+		            <section>
+		                <h3>Vectorial data</h3>
+		                <img height="500" src="images/syntool_d-polar-low.jpg" alt="Model Wind" />
+		                <p><small>TrueColor (MODIS) and Polar low location (SOLab)</small></p>
+		            </section>
+		            <section>
+		                <h3>Vectorial data</h3>
+		                <img height="500" src="images/syntool-polar-low.jpg" alt="Model Wind" />
+		                <p><small>TrueColor (MODIS) and Polar low location (SOLab)</small></p>
+		            </section>
 		        </section>
+                
+                <section>
+                    <section class="contacts" data-state="no-title-footer">
+                        <h3>Syntool Arctic Portal</h3>
+                        <p><a href="http://arctic.solab.rshu.ru">http://arctic.solab.rshu.ru</a></p>
+                        <h4>Leading developer</h4>
+                        <p>Slava Shebanov <a href="mailto:shebanov@rshu.ru">shebanov@rshu.ru</a></p>
+                        <h4>Speaker</h4>
+                        <p>Ilya Bolkhovsky <a href="mailto:ilya@rshu.ru">ilya@rshu.ru</a></p>
+                    </section>
+                    <section>
+                        <h3>Thank you!</h3>
+                        <h4>Do you have any questions?</h4>
+                    </section>
+                </section>
 		    </div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
